@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="staticfiles/main_page.css"
+        />
+    </head>
+    <body>
+        <div id="flex-container">
+            <div id="flex-1">
+                <span>쿠팡 가격 비교 검색 사이트</span>
+            </div>
+            <div id="flex-2">
+                <span class="description">쿠팡 상품들의 가격을 비교하고, </span>
+                <span class="description"
+                    >저렴한 반품 상품을 구매할 수 있는 링크를 찾아줍니다.</span
+                >
+            </div>
+            <div id="flex-3">
+                <input
+                    placeholder="검색하려는 상품명을 입력하세요..."
+                    type="text"
+                />
+                <button type="submit">검색하기</button>
+            </div>
+        </div>
+    </body>
+</html>

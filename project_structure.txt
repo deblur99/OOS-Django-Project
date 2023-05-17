@@ -1,0 +1,64 @@
+--- Folder Structure ---
+[app]
+    __init__.py
+    admin.py
+    apps.py
+    models.py
+    [static]
+        [css]
+            main_page.css
+            product_detail_page.css
+            search_result_page.css
+        [js]
+” ”€ ”€ script.js
+    [templates]
+        main_page.html
+        product_detail_page.html
+        search_result_page.html
+    tests.py
+    views.py
+db.sqlite3
+manage.py
+[oos_django_project]
+    __init__.py
+    asgi.py
+    settings.py
+    urls.py
+    views.py
+    wsgi.py
+[staticfiles]
+    [admin]
+        [css]
+    œ ”€ ”autocomplete.css
+    œ ”€ ”base.css
+    œ ”€ ”changelists.css
+    œ ”€ ”dark_mode.css
+    œ ”€ ”dashboard.css
+    œ ”€ ”fonts.css
+    œ ”€ ”forms.css
+    œ ”€ ”login.css
+    œ ”€ ”nav_sidebar.css
+    œ ”€ ”responsive.css
+    œ ”€ ”responsive_rtl.css
+    œ ”€ ”rtl.css
+        [vendor]
+        [select2]
+            LICENSE-SELECT2.md
+            select2.css
+            select2.min.css
+    ” ”€  widgets.css
+         ” [fonts]
+         ” [img]
+         ” [js]
+            [admin]
+            [vendor]
+            [jquery]
+            [select2]
+            [xregexp]
+        main_page.css
+        main_page.html
+        product_detail_page.html
+        product_detail_pages.css
+        script.js
+        search_result_page.css
+        search_result_page.html

@@ -1,0 +1,218 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                box-sizing: border-box;
+
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 282px;
+                gap: 10px;
+
+                position: relative;
+                width: 1279px;
+            }
+
+            div#flex-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 60px;
+                gap: 20px;
+
+                width: 1000px;
+
+                background: #f0ffdc;
+                border: 2px solid #000000;
+            }
+
+            div#flex-1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+
+                width: 880px;
+                height: 76px;
+
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+
+            div#flex-1 a.navigation {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+
+                color: #000000;
+
+                /* Inside auto layout */
+
+                display: flex;
+                flex: none;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+            }
+
+            div#flex-1 a.navigation:hover {
+                color: #7000ff;
+            }
+
+            div#flex-2 {
+                box-sizing: border-box;
+
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 16px;
+                gap: 20px;
+
+                width: 880px;
+                height: 695px;
+
+                border: 1px solid #000000;
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 1;
+            }
+
+            div#flex-2 img {
+                max-width: 150px;
+                max-height: 150px;
+                margin-top: 250px;
+                border: 0.1px solid slategray;
+            }
+
+            div#flex-2 div#product_info {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+            }
+
+            div#flex-2 div#product_info span {
+                display: block;
+                margin: 12px 0;
+            }
+
+            div#flex-2 ul#product_properties {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            div#flex-2 div#links {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                gap: 20px;
+            }
+
+            div#flex-2 div#links a {
+                color: #000000;
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            div#flex-2 div#links div#return-links {
+                text-align: center;
+                margin-bottom: 200px;
+            }
+
+            div#flex-2 div#links div#return-links ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+            }
+
+            div#flex-2 div#links div#return-links ul li {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flex-container">
+            <div id="flex-1">
+                <a href="../search" class="navigation"
+                    >< 검색 결과로 돌아가기</a
+                >
+                <a href="../mainpage" class="navigation">새로 검색하기</a>
+            </div>
+            <div id="flex-2">
+                <img
+                    src="https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2022/09/21/15/5/98a71c41-9091-4340-8cb8-291d92612333.jpg"
+                    alt="product"
+                />
+                <div id="product_info">
+                    <span class="name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스</span
+                    >
+                    <span class="price">367,080원</span>
+                </div>
+                <ul id="product_properties">
+                    <li>모델명/품번:</li>
+                    <li>가전 모델:</li>
+                    <li>케이스 재질:</li>
+                    <li>방수 여부:</li>
+                    <li>쿠팡상품번호:</li>
+                </ul>
+
+                <div id="links">
+                    <a href="/staticfiles/search_result_page.html">상품 링크</a>
+
+                    <div id="return-links">
+                        <a href="http://www.google.com">반품 링크</a>
+                        <ul id="return-links">
+                            <li><a href="http://www.google.com">반품-하</a></li>
+                            <li><a href="http://www.google.com">반품-중</a></li>
+                            <li><a href="http://www.google.com">반품-상</a></li>
+                            <li>
+                                <a href="http://www.google.com">반품-최상</a>
+                            </li>
+                            <li>
+                                <a href="http://www.google.com"
+                                    >반품-박스훼손</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,321 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 282px;
+                gap: 10px;
+
+                position: relative;
+                width: 1279px;
+                height: auto;
+
+                background: #ffffff;
+                border: 4px solid #000000;
+            }
+
+            div#flex-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 60px;
+                gap: 20px;
+
+                width: 100%;
+                height: 100%;
+
+                background: #f0ffdc;
+                border: 2px solid #000000;
+            }
+
+            div#flex-1 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+
+            div#flex-1 div.navigation {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+            }
+
+            div#flex-2 {
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10px;
+                gap: 10px;
+                border: 1px solid #000000;
+            }
+
+            div#flex-2 span {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+            }
+
+            div#flex-2 span#title {
+                font-weight: 700;
+            }
+
+            div#flex-2 span.accent {
+                color: #7000ff;
+            }
+
+            div#flex-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px;
+                gap: 20px;
+
+                width: auto;
+                min-height: 648px;
+                height: 100%;
+
+                border: 1px solid #000000;
+
+                flex: none;
+                order: 2;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+
+            div#flex-3 div.flex-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+
+                width: 848px;
+                height: 127px;
+
+                border-bottom: 1px solid #000000;
+            }
+
+            div#flex-3 div.flex-item span.item-desc {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 29px;
+            }
+
+            div#flex-3 div.flex-item span.item-desc.price {
+                color: #7000ff;
+            }
+
+            div#flex-3 div.flex-item div.navigation {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 10px;
+            }
+
+            div#flex-3 div.flex-item div.navigation a.item_detail_navigation {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 29px;
+                text-align: center;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flex-container">
+            <div id="flex-1">
+                <div class="navigation">
+                    <a href="../mainpage">< 새로 검색하기</a>
+                </div>
+            </div>
+            <div id="flex-2">
+                <span id="title">애플워치</span>
+                <span id="result"
+                    >총 <span class="accent">34</span> 건의 항목이
+                    검색되었습니다.</span
+                >
+            </div>
+            <div id="flex-3">
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+
+                <div class="flex-item">
+                    <span class="item-desc name"
+                        >Apple 2022 애플워치 SE 2세대 알루미늄 케이스
+                        (40mm)</span
+                    >
+                    <span class="item-desc price">₩330,000</span>
+                    <div class="navigation">
+                        <a href="../detail" class="item_detail_navigation"
+                            >상세정보</a
+                        >
+                        <a
+                            href="https://www.coupang.com/vp/products/6790571369?itemId=15997178744&vendorItemId=83202425009&q=%EC%95%A0%ED%94%8C%EC%9B%8C%EC%B9%98&itemsCount=27&searchId=17dad4c5537848aa96baaafa77e95983&rank=0&isAddedCart="
+                            class="item_detail_navigation"
+                            >바로가기</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
